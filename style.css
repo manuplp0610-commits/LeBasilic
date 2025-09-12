@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Dancing+Script:wght@400..700&display=swap');
+
+html{
+  scroll-behavior: smooth;
+}
+body {
+    font-family:'advent pro', sans-serif;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+
+    background: #FFFAE1;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@ Navbar @@@@@@@@@@@@@@@@@@@@@@@*/
+nav{
+    overflow: hidden;
+    background: #FFFAE1;
+    width: 100%;
+    min-height: 50px;
+    position: fixed;
+    opacity: 0.9;
+    z-index: 2;
+    border: 2px solid #524A3A;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+header li{
+    float: right;
+    font-size: 1.2em;
+    margin-right: 30px;
+    margin-top: 15px;
+    list-style-type: none;
+}
+#logo1{
+    float: left;
+    padding: 0;
+    margin: 0 0 0 10px;
+}
+#logo1 img{
+    height: 50px;
+}
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@ Footer @@@@@@@@@@@@@@@@@@@@@@@*/
+footer{
+   background: rgb(84, 84, 84);
+    background-size: cover;
+}
+/*Flex*/
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+}
+.msg{
+    text-align: center;
+}
+.msg h4{
+    font-size: 1.5em;
+}
+.coordoné{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 0 10px;
+}
+.coordoné h4{
+    text-align: center;
+    font-size: 1.2em;
+}
+.tel, .mail {
+    display: block;
+    margin: 10px;
+    font-weight: bold;
+}
+.phone {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #d32f2f;
+  display: inline-block; /* important pour que transform fonctionne */
+  will-change: transform;
+}
+.tel a, .mail a{
+    color: rgb(243, 25, 97);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.3em;
+}
+.db{
+    display: flex;
+    align-items: center
+}
+.horaire{
+   margin: 0 20px 20px 0;
+}
+.horaire p {
+    margin: 0 0 0 5px;
+    text-align: right;
+    font-size: 1.1em;
+}
+.horaire h4{
+    text-align: center;
+    font-size: 1.5em;
+}
+/* copyright */
+#deuxiemeTrait {
+    height: 1px;
+  width: 75%;
+  background: #FFFAE1;
+  margin: 10px auto 10px auto;
+  box-shadow: 1px 3px 2px black;
+}
+.copyrightIcons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  padding: 0 5% 5px 5%;
+}
+.copyright {
+  color: white;
+  font-size: 0.9em;
+}
+.copyright a {
+  color: rgb(214, 228, 26);
+}
+.icons {
+  width: 50%;
+  text-align: right;
+}
+.icons a {
+  margin: 0 15px;
+  font-size: 1.3em;
+  color: white;
+}
+.icons a :hover{
+  transform: scale(1.5); 
+  transition: 0.1s;
+}
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@ Page Accueil@@@@@@@@@@@@@@@@@@@@@@@*/
+
+/* image pricipale */
+.imagePrincipale{
+    background: url(./Assets/images/bodyFour.jpg) no-repeat fixed 50% 50%;
+    background-size: cover;
+    height: 599px;
+    padding-top: 50px;
+    color: #FFFAE1;
+    text-align: center;
+}
+h1{
+    font-family: 'Dancing script',cursive ;
+    font-size: 9em;
+    text-shadow: 1px 3px 2px black;
+    display: flex;
+    justify-content: center;
+    margin: 150px 0 50px 0;
+}
+#premierTrait{
+    height: 1px;
+    width: 30%;
+    background: #FFFAE1;
+    margin: -30px auto;
+    box-shadow: 1px 3px 2px black;
+}
+#adresse{
+  text-align: center;
+  padding: 50px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* text présentation */
+.presentation{
+    background: #FFFAE1;
+    text-align: center;
+    padding: 20px;
+}
+.presentation h2{
+    font-size: 2em;
+}
+.presentation p{
+    font-size: 1.6em;
+}
+.photo{
+  background: #FFFAE1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.imgd{
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+.imgg{
+  opacity: 0;
+  transition: opacity 3s ease;
+}
+.imgdla{
+  opacity: 1;
+}
+.imgdpla{
+  opacity: 0;
+}
+
+
+.imggla{
+  visibility: visible; 
+  opacity: 1;
+}
+.imggpla{
+  opacity: 0;
+}
+.photo img{
+  height: 150px;
+  margin: 5px;
+}
+
+/* Note et avis */
+.noteEtAvis{
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background: #FFFAE1;
+    padding-bottom: 20px;
+}
+.note{
+  width: 350px;
+  height: 250px;
+  margin: 0 10px 5px 10px;
+  border: 5px solid #524A3A;
+  border-radius: 0 35% 0 35%;
+  text-align: center;
+  color: rgb(8, 6, 6);
+  background: url(./Assets/images/notePatron.jpg);
+}
+.note h5 {
+  color: white;
+  font-size: 2em;
+  margin: 5px 10%;
+  text-decoration: underline;
+}
+.note p{
+  font-family: 'Dancing script',cursive ;
+  font-size: 2em;
+  margin: 5px 0;
+}
+.avis img{
+  height: 250px;
+  width: 250px;
+  margin: 0;
+  border-radius: 50%;
+}
+/* Localisation*/
+iframe{
+  margin: -2px;
+  padding: 0;
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@ Page Menu @@@@@@@@@@@@@@@@@@@@@@@*/
+.bodyMenu{
+  background: url(./Assets/images/fondmenu.webp);
+}
+.navMenu{
+  margin-top: -60px;
+}
+.imagePrincipaleMenu{
+  padding: 10px 20px;
+  background: url(./Assets/images/fondTab.jpg) no-repeat;
+  background-size: cover;
+  min-height: calc(100vh - 100px);
+  font-size: 1.5em;
+  border-radius: 10%;
+  border: 5px solid #FFFAE1;
+  margin-top: 60px;
+}
+.imagePrincipaleMenu h4{
+  margin: 10px 0 0 30px;
+  color: white;
+  font-size: 2em;
+}
+.titre{
+    display: flex;
+    color: white;
+}
+#trait{
+    height: 4px;
+    width: 70%;
+    background: rgb(244, 116, 3);
+    margin-left: 50px;
+}
+.nosPizzas{
+    display: grid;
+    justify-content: space-evenly;
+    gap: 10px 20px;
+    max-height: 100%;
+    overflow-x: auto;
+}
+.nosPates, .notreDessert{
+    display: flex;
+    justify-content: space-around;
+    color: rgb(244, 116, 3);
+    font-weight: bold;
+    
+}
+.pizza{
+    color: rgb(244, 116, 3);
+    grid-column: 1;
+    font-weight: bold;
+    margin: auto 0;
+}
+.ingredients{
+    color: white;
+    grid-column: 2;
+}
+.prix{
+    color: rgb(244, 116, 3);
+    grid-column: 3;
+    font-weight: bold;
+    margin: auto 0;
+}
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@Media@@@@@@@@@@@@@@@@@@@@@@@*/
+@media (max-width: 895px){
+  h1{
+    display: grid;
+    margin: 0px 0 50px 0;
+    font-size: 8em;
+  }
+}
+@media (max-width: 830px){
+  .flex{
+    display: block;
+    padding-top: 10px;
+}
+  .db{
+    justify-content: space-evenly
+  }
+  iframe{
+  margin-bottom: -32px;
+  padding: 0;
+}
+}
+@media (max-width: 662px){
+.note p{
+  font-family: 'Dancing script',cursive ;
+  font-size: 1.5em;
+  padding: 10px 0 0 0;
+  margin: 5px 0;
+}
+}
+@media (max-width: 530px){
+  .photo img{
+  height: 120px;
+}
+}
+@media (max-width: 490px){
+  .avis img{
+  height: 250px;
+  width: 180px;
+  margin: 0 10px;
+  border-radius: 50%;
+}
+h1{
+  font-size: 5em;
+  padding-top: 100px;
+}
+.imagePrincipaleMenu{
+  font-size: 1em;
+}
+  .note h5{
+    font-size: 1.5em;
+  }
+header li {
+  font-size: 1em;
+  margin: 15px 15px 0 0;
+}
+}
+@media (max-width: 400px){
+  .photo img{
+  height: 100px;
+}
+.presentation p{
+    font-size: 1.2em;
+    margin: 0 10%;
+}
+
+  
+.tel a, .mail a{
+    color: rgb(243, 25, 97);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+}
+.tel{
+  margin-right: 0;
+}
+}
